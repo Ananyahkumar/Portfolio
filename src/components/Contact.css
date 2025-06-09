@@ -1,0 +1,104 @@
+.contact {
+  background: linear-gradient(to right, #2e1f27, #3b1f2b);
+  color: #fce8d5;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact h2 {
+  font-weight: 700;
+  font-size: 42px;
+
+  margin-bottom: 10px;
+  color: #ffd5d5;
+}
+
+.contact h2 span {
+  color: #ff9b9b;
+}
+
+.contact-form {
+  margin-top: 40px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 20px rgba(90, 26, 73, 0.1);
+  border: 2px solid #572246;
+  padding: 15px 20px;
+  border-radius: 12px;
+  color: #eee;
+  font-size: 16px;
+  font-weight: 500;
+  resize: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #fff;
+  font-style: italic;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #572246;
+  box-shadow: 0 0 20px rgba(240, 190, 190, 0.1);
+  outline: none;
+}
+
+.contact-form textarea {
+  grid-column: 1 / -1;
+  min-height: 160px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+  grid-column: 1 / -1;
+  background: linear-gradient(90deg, #522642, #3a1c31);
+  color: #fff;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  transition: background 0.4s ease, transform 0.2s ease;
+  box-shadow: 0 4px 15px #5f447a;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #5f447a, #372747);
+  transform: scale(1.05);
+  box-shadow: 0 6px 25px #5f447a;
+}
+
+@media (max-width: 600px) {
+  .contact {
+    padding: 60px 20px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form textarea {
+    grid-column: 1;
+  }
+
+  .btn {
+    grid-column: 1;
+  }
+}

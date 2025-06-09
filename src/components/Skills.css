@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+.skills {
+  background: linear-gradient(to right, #2e1f27, #3b1f2b);
+  color: #fce8d5;
+  padding: 100px 50px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 42px;
+  margin-bottom: 40px;
+  color: #ffd5d5;
+}
+
+.skills h2 span {
+  color: #ff9b9b;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skill-card {
+   background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 0 20px rgba(240, 190, 190, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-align: center;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #ff9b9b;
+}
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-card li {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #f8dede;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .skills {
+    padding: 70px 20px;
+  }
+
+  .skills h2 {
+    font-size: 32px;
+  }
+}
