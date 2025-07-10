@@ -28,11 +28,14 @@ const Home = () => {
 
       <div className="education-section">
         <h2>Education</h2>
-        
+
         <div className="education-item">
-          <h3>Christ School</h3>
+          <h3>Malnad College of Engineering</h3>
           <p>
-          I completed my early schooling at Christ School with a solid academic foundation, securing an impressive 89%.
+          Currently, I am pursuing a Bachelor's degree in Computer Science at Malnad College of Engineering. 
+          Here, I have built a strong foundation in core concepts such as programming, algorithms, and software engineering. 
+          The curriculum has offered hands-on experience with various programming languages, tools, and development environments, helping me grow both technically and professionally. 
+          I have maintained a commendable CGPA of 9.0, reflecting my consistent academic performance and passion for the field.
           </p>
         </div>
 
@@ -46,14 +49,13 @@ const Home = () => {
         </div>
 
         <div className="education-item">
-          <h3>Malnad College of Engineering</h3>
+          <h3>Christ School</h3>
           <p>
-          Currently, I am pursuing a Bachelor's degree in Computer Science at Malnad College of Engineering. 
-          Here, I have built a strong foundation in core concepts such as programming, algorithms, and software engineering. 
-          The curriculum has offered hands-on experience with various programming languages, tools, and development environments, helping me grow both technically and professionally. 
-          I have maintained a commendable CGPA of 9.0, reflecting my consistent academic performance and passion for the field.
+          I completed my early schooling at Christ School with a solid academic foundation, securing an impressive 89%.
           </p>
         </div>
+
+        
       </div>
     </section>
   );
